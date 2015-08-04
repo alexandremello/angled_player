@@ -3,9 +3,14 @@
   "version": "0.0.1",
   "description": "Cloud storage mp3 streaming",
   "main": "index.html",
+  "repository": "alexandremello/angled_player",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Alexandre Mello",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+      "sugar": "1.4.1",
+      "musicmetadata": "1.0.1"
+  }
 }

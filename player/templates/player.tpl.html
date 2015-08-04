@@ -1,0 +1,4 @@
+<audio controls preload="metadata" ng-src={{musicUrl}} style="display: none"></audio>
+<a href="" class="btn btn-default" ng-click="playPause()" ng-class="{ 'disabled': !canPlay }">
+  <i class="fa" ng-class="{ 'fa-play': paused, 'fa-pause': playing }"></i>
+</a>

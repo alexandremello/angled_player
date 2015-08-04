@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html ng-app="angledPlayer">
   <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="player/node_modules/sugar/release/sugar-full.development.js"></script>
     <script src="player/js/angled_player.js"></script>
-    <script src="player/js/player_controller.js"></script>
+    <script src="player/js/player_resources.js"></script>
     <script src="player/js/player_directives.js"></script>
+    <script src="player/js/player_controller.js"></script>
   </head>
   <body ng-controller="playerController">
-    <audio-player music-url="musicUrl" current-time="currentTime"></audio-player>
+    <audio-player play-list="playList" music-url="musicUrl" current-time="currentTime" duration="duration"></audio-player>
+    <playlist music-list="musicList" selected-music="musicUrl"></playlist>
   </body>
 </html>
