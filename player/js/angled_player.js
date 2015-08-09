@@ -1,1 +1,1 @@
-angular.module('angledPlayer', ['directives']);
+angular.module('angledPlayer', ['controllers', 'directives']);

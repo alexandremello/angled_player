@@ -10,10 +10,10 @@
     <script src="player/js/angled_player.js"></script>
     <script src="player/js/player_resources.js"></script>
     <script src="player/js/player_directives.js"></script>
-    <script src="player/js/player_controller.js"></script>
+    <script src="player/js/player_controllers.js"></script>
   </head>
   <body ng-controller="playerController">
     <audio-player play-list="playList" music-url="musicUrl" current-time="currentTime" duration="duration"></audio-player>
-    <playlist music-list="musicList" selected-music="musicUrl"></playlist>
+    <playlist music-list="musics" selected-music="musicUrl"></playlist>
   </body>
 </html>
